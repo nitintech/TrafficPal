@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.trafficpal.AddRoute"
+    tools:ignore="MergeRootFrame">
+
+
+    <FrameLayout
+        android:id="@+id/RouteOptions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/NotificationSettings"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        ></FrameLayout>
+</LinearLayout>

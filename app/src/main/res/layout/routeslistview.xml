@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rowselector"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_source"
+        android:text="SOURCE:"
+        android:padding="4dp"
+        android:layout_marginLeft="4dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_destination"
+        android:text="DESTINATION:"
+        android:padding="4dp"
+        android:layout_marginLeft="4dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NOTIFICATIONS"
+            android:enabled="false"
+            android:id="@+id/box_listnots"
+            android:textStyle="bold"
+            android:focusable="false"/>
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LOGGING"
+            android:enabled="false"
+            android:id="@+id/box_listlogs"
+            android:textStyle="bold"
+            android:focusable="false"
+            android:visibility="visible" />
+    </LinearLayout>
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_options"
+        android:text="Logging: enabled, notifications: enabled"
+        android:layout_margin="4dp" />-->
+
+</LinearLayout>

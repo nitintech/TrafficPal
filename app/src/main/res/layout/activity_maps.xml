@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.android.trafficpal.MapsActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/Text_mapsource"
+                android:text="@string/source_address"
+                android:paddingBottom="@dimen/abc_action_bar_icon_vertical_padding_material"
+                android:padding="@dimen/abc_button_padding_horizontal_material" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/Text_mapdest"
+                android:text="@string/dest_address"
+                android:paddingBottom="@dimen/abc_action_bar_icon_vertical_padding_material"
+                android:padding="@dimen/abc_button_padding_horizontal_material" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/Text_mapduration"
+                android:text="@string/traffic_duration"
+                android:paddingBottom="@dimen/abc_action_bar_icon_vertical_padding_material"
+                android:padding="@dimen/abc_button_padding_horizontal_material" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_reverse"
+                android:src="@drawable/ic_swap_vert_black_24dp"
+                android:background="@null"
+                android:elevation="6dp"
+                android:contentDescription="@string/ReverseButton"
+                android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"
+                android:layout_marginBottom="@dimen/abc_button_padding_horizontal_material"
+                android:layout_margin="@dimen/abc_button_padding_horizontal_material" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"
+                android:layout_marginBottom="@dimen/abc_button_padding_horizontal_material"
+                android:src="@drawable/ic_replay_black_24dp"
+                android:elevation="6dp"
+                android:background="@null"
+                android:id="@+id/button_refresh"
+                android:contentDescription="@string/RefreshButton"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"
+                android:src="@drawable/ic_directions_black_24dp"
+                android:elevation="6dp"
+                android:background="@null"
+                android:id="@+id/button_directions"
+                android:contentDescription="@string/DirectionsButton"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+</LinearLayout>
+
+<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/map"
+    tools:context="com.example.android.trafficpal.MapsActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />
+-->

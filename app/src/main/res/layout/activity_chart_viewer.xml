@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.trafficpal.ChartViewer">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/Text_chartsource"
+                android:text="@string/source_address"
+                android:paddingLeft="@dimen/abc_button_padding_horizontal_material"
+                android:paddingRight="@dimen/abc_button_padding_horizontal_material"
+                android:paddingBottom="@dimen/abc_button_padding_horizontal_material" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/Text_chartdest"
+                android:text="@string/dest_address"
+                android:paddingBottom="@dimen/abc_button_padding_horizontal_material"
+                android:paddingRight="@dimen/abc_button_padding_horizontal_material"
+                android:paddingLeft="@dimen/abc_button_padding_horizontal_material" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/Text_hightlighted"
+                android:paddingLeft="@dimen/abc_button_padding_horizontal_material"
+                android:paddingRight="@dimen/abc_button_padding_horizontal_material" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_chartreverse"
+                android:src="@drawable/ic_swap_vert_black_24dp"
+                android:background="@null"
+                android:elevation="6dp"
+                android:contentDescription="@string/ReverseButton"
+                android:layout_marginRight="@dimen/abc_button_padding_horizontal_material"
+                android:layout_marginBottom="@dimen/abc_button_padding_horizontal_material"
+                android:layout_margin="@dimen/abc_button_padding_horizontal_material" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

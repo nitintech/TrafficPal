@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">TrafficPal</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_header">My Traffic Routes</string>
+    <string name="title_activity_add_route">AddRoute</string>
+    <string name="source_address">Enter Source Address</string>
+    <string name="dest_address">Enter Destination Address</string>
+
+    <!-- Days labels for notification buttons -->
+    <string name = "Monday">Mo</string>
+    <string name = "Tuesday">Tu</string>
+    <string name = "Wednesday">We</string>
+    <string name = "Thursday">Th</string>
+    <string name = "Friday">Fr</string>
+    <string name = "Saturday">Sa</string>
+    <string name = "Sunday">Su</string>
+
+    <string name = "to_nots">Notifications S->D</string>
+    <string name = "back_nots">Notifications D->S</string>
+    <string name="save_path">SAVE</string>
+
+    <string name = "hint_enable">Click again to enable</string>
+    <string name = "hint_disable">Click again to disable</string>
+    <string name = "hint_select"> Select a day to set and enable notification</string>
+
+    <string name ="check_nots">Enable Notifications</string>
+    <string name ="check_logging">Enable logging</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="main_message">Looks like you have not added any routes yet.\nAdd a route using the + button above to monitor traffic and get updates</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="traffic_duration">Total Duration: </string>
+    <string name="RefreshButton">Refresh</string>
+    <string name="ReverseButton">Reverse Path</string>
+    <string name="DirectionsButton">Directions</string>
+
+    <string name="EditAction">Edit</string>
+    <string name="DeleteAction">Delete</string>
+    <string name="title_activity_route_settings">RouteSettings</string>
+    <string name = "text_Options">Options</string>
+    <string name = "check_highways">Avoid highways</string>
+    <string name = "check_tolls">Avoid tolls</string>
+    <string name = "check_ferries">Avoid ferries</string>
+
+    <string name = "Cancel_setting">Cancel</string>
+    <string name = "Done_setting">Done</string>
+    <string name="title_activity_chart_viewer">ChartViewer</string>
+
+    <!-- values for charts-->
+    <string name = "action_charts">Logs</string>
+    <string name="title_activity_day_selection">DaySelection</string>
+    <string name="title_select_day">Select days</string>
+    <string name="check_monday">Monday</string>
+    <string name="check_tuesday">Tuesday</string>
+    <string name="check_wednesday">Wednesday</string>
+    <string name="check_thursday">Thursday</string>
+    <string name="check_friday">Friday</string>
+    <string name="check_saturday">Saturday</string>
+    <string name="check_sunday">Sunday</string>
+
+
+</resources>

@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    style="@style/NobarTheme"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/color_pink">
+        <!-- FAB design -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/main_header"
+            android:id="@+id/textView"
+            android:layout_weight="6"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="@dimen/abc_action_bar_content_inset_material"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button_add_route"
+            android:src="@drawable/ic_add_white_3x"
+            app:fabSize="normal"
+            app:elevation="6dp"
+            app:backgroundTint="@color/color_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:pressedTranslationZ="12dp"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/abc_action_bar_overflow_padding_start_material"
+            android:layout_gravity="center_vertical|right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_gravity="right">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/main_message"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView_mainText"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/abc_action_bar_content_inset_material"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="@dimen/abc_action_bar_content_inset_material" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/listView_routes"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
