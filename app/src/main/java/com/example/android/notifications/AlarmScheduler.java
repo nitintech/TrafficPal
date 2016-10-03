@@ -67,7 +67,7 @@ public class AlarmScheduler extends Service
     public int[] dayMap = {0, 6, 0, 1, 2, 3, 4, 5};
     List<AlarmsDay> dailyAlarmsSD = new ArrayList<>();
     List<AlarmsDay> dailyAlarmsDS = new ArrayList<>();
-    public static int LOGGING_INTERVAL = 10; //in minutes
+    public static int LOGGING_INTERVAL = 15; //in minutes
 
     AlarmManager mAlarmManager;
     public static final int REQUEST_CODE_SD = 1;
