@@ -212,12 +212,14 @@ public class ChartViewer extends AppCompatActivity implements OnChartValueSelect
     @Override
     public void onValueSelected(Entry e, Highlight h) {
 
-        int timeSec = (int)h.getX();
+        float timeSec = h.getX();
+        int timeHr = (int)timeSec;
+        int timeMin = (int)((timeSec-timeHr)*60);
         int durationSec = (int) (h.getY()*60);
 
         StringBuilder builder = new StringBuilder();
         builder.append("<b>TIME:</b>");
-        builder.append(timeSec/100).append(":").append(timeSec%100);
+        builder.append(timeHr).append(":").append(timeMin);
 
         builder.append(" <b>DURATION:</b>");
         int hours = durationSec/3600;
@@ -243,7 +245,9 @@ public class ChartViewer extends AppCompatActivity implements OnChartValueSelect
         @Override
         public String getFormattedValue(float value, AxisBase axis) {
             StringBuilder builder = new StringBuilder();
-            builder.append((int)(value/100)).append(":").append((int) (value % 100));
+            int hrs = (int) value;
+            int min =(int) ((value - hrs)*60);
+            builder.append(hrs).append(":").append(min);
             return builder.toString();
         }
 
@@ -261,7 +265,9 @@ public class ChartViewer extends AppCompatActivity implements OnChartValueSelect
             if (map == null || map.size() == 0) continue;
             for (int i = 0; i <2400; i+= AlarmScheduler.LOGGING_INTERVAL) {
                 if (map.containsKey(i)) {
-                    values.add(new Entry(i, map.get(i) / (float) 60));
+                    int hr = i/100;
+                    int min = i%100;
+                    values.add(new Entry(hr+(float)min/60, map.get(i) / (float) 60));
                 }
             }
             lineSets[day] = new LineDataSet(values, dayDesc[day]);
